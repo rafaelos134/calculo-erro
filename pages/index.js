@@ -52,7 +52,7 @@ class Input extends React.Component{
     render(){
         return(
         <div>
-        <h1>calculadora de erro experimental</h1>
+        <h1>calculadora de erro experimental.</h1>
         <br/>
         <p1>não usar virgula</p1>
         <br/>

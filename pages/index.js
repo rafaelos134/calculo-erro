@@ -13,6 +13,7 @@ function fazPost(url, body){
 
     request.onload = function(){
         console.log(this.responseText)
+        window.alert("o erro = " + this.responseText)
     }
 
     return request.responseText
@@ -20,9 +21,8 @@ function fazPost(url, body){
 
 function mandavalor(t){
     let url = "https://polar-headland-20103.herokuapp.com/https://teste-ca.herokuapp.com//calc"
-    
-    
     fazPost(url,t)
+    
 }
 
 
@@ -45,12 +45,18 @@ class Input extends React.Component{
             evento.preventDefault();
             var t = this.state
             mandavalor(t);
+            
         }
     }
 
     render(){
         return(
         <div>
+        <h1>calculadora de erro experimental</h1>
+        <br/>
+        <p1>não usar virgula</p1>
+        <br/>
+        <br/>
         variaveis:<input name="variaveis" value={this.state.evento} onChange={this.onChange} type="text"/>
         <br/>
         <br/>
